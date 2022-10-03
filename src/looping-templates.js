@@ -10,12 +10,12 @@ export class LoopingTemplates extends LitElement {
     }
     constructor() {
         super();
-        this.items = ['red', 'green', 'blue'];
+        this.items = ['red', 'green', 'blue', 'pink'];
     }
     render() {
         const itemTemplates = [];
         for (const i of this.items) {
-            itemTemplates.push(html `<li>${i}</li>`);
+            itemTemplates.push(html `<li style="color: ${i}">${i}</li>`);
         }
         return html `
         <ul>
